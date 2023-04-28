@@ -46,14 +46,39 @@ describe("Roman numbers tests", () => {
 		expect(actual).toBe("XI");
 	});
 
+	test(`converting 12 into XII`, () => {
+		const actual = numberToRoman(12);
+		expect(actual).toBe("XII");
+	});
+
+	test(`converting 16 into XVI`, () => {
+		const actual = numberToRoman(16);
+		expect(actual).toBe("XVI");
+	});
+
+	test(`converting 21 into XXI`, () => {
+		const actual = numberToRoman(21);
+		expect(actual).toBe("XXI");
+	});
+
 	test(`converting 50 into L`, () => {
 		const actual = numberToRoman(50);
 		expect(actual).toBe("L");
 	});
 
+	test(`converting 51 into LI`, () => {
+		const actual = numberToRoman(51);
+		expect(actual).toBe("LI");
+	});
+
 	test(`converting 100 into C`, () => {
 		const actual = numberToRoman(100);
 		expect(actual).toBe("C");
+	});
+
+	test(`converting 101 into C`, () => {
+		const actual = numberToRoman(101);
+		expect(actual).toBe("CI");
 	});
 
 	test(`converting 500 into D`, () => {
