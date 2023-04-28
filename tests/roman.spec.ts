@@ -15,4 +15,9 @@ describe("Roman numbers tests", () => {
 		const actual = numberToRoman(3);
 		expect(actual).toBe("III");
 	});
+
+	test(`converting 5 into V`, () => {
+		const actual = numberToRoman(5);
+		expect(actual).toBe("V");
+	});
 });
