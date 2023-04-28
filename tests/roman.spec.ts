@@ -41,6 +41,11 @@ describe("Roman numbers tests", () => {
 		expect(actual).toBe("X");
 	});
 
+	test(`converting 11 into XI`, () => {
+		const actual = numberToRoman(11);
+		expect(actual).toBe("XI");
+	});
+
 	test(`converting 50 into L`, () => {
 		const actual = numberToRoman(50);
 		expect(actual).toBe("L");
