@@ -21,6 +21,11 @@ describe("Roman numbers tests", () => {
 		expect(actual).toBe("V");
 	});
 
+	test(`converting 6 into VI`, () => {
+		const actual = numberToRoman(6);
+		expect(actual).toBe("VI");
+	});
+
 	test(`converting 10 into X`, () => {
 		const actual = numberToRoman(10);
 		expect(actual).toBe("X");
