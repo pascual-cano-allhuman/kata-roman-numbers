@@ -10,4 +10,9 @@ describe("Roman numbers tests", () => {
 		const actual = numberToRoman(2);
 		expect(actual).toBe("II");
 	});
+
+	test(`converting 3 into III`, () => {
+		const actual = numberToRoman(3);
+		expect(actual).toBe("III");
+	});
 });
