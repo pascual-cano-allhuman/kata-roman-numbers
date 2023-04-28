@@ -1,5 +1,8 @@
+import { numberToRoman } from "../src/roman";
+
 describe("Roman numbers tests", () => {
-  test(`Dummy test`, () => {
-    expect(true).toBe(true);
-  });
+	test(`converting 1 into I`, () => {
+		const actual = numberToRoman(1);
+		expect(actual).toBe("I");
+	});
 });
