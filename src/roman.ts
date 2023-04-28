@@ -9,5 +9,7 @@ const NUMBER_TO_ROMAN_MAP: Record<any, string> = {
 };
 
 export const numberToRoman = (n: number): string => {
-	return NUMBER_TO_ROMAN_MAP[n] || "".padEnd(n, "I");
+	if (NUMBER_TO_ROMAN_MAP[n]) return NUMBER_TO_ROMAN_MAP[n];
+
+	return "".padEnd(n, "I");
 };
